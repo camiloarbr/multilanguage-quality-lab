@@ -1,6 +1,5 @@
-from utils import suma
-
 from palindromo import es_palindromo
+from utils import suma
 
 
 # Tests para es_palindromo
