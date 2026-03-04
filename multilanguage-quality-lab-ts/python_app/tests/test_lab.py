@@ -1,21 +1,23 @@
-from palindromo import es_palindromo
 from utils import suma
+
+from palindromo import es_palindromo
+
 
 # Tests para es_palindromo
 def test_radar():
-    assert es_palindromo("radar") == True
+    assert es_palindromo("radar")
 
 def test_radar_mayuscula():
-    assert es_palindromo("Radar") == True
+    assert es_palindromo("Radar")
 
 def test_frase_palindromo():
-    assert es_palindromo("anita lava la tina") == True
+    assert es_palindromo("anita lava la tina")
 
 def test_no_palindromo():
-    assert es_palindromo("python") == False
+    assert not es_palindromo("python")
 
 def test_cadena_vacia():
-    assert es_palindromo("") == True
+    assert es_palindromo("")
 
 # Tests para suma
 def test_suma_positivos():
