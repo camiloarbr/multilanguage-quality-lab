@@ -1,7 +1,21 @@
+const { isPalindrome } = require('../src/stringUtils');
 
-// TODO: Escribe pruebas unitarias para isPalindrome.
-// Sugerencias: "radar" -> true; "anita lava la tina" -> true; "python" -> false; "" -> true; "Radar" -> true
+test('radar es palíndromo', () => {
+  expect(isPalindrome('radar')).toBe(true);
+});
 
-test('ejemplo siembra', () => {
-  expect(true).toBe(true);
+test('Radar con mayúscula es palíndromo', () => {
+  expect(isPalindrome('Radar')).toBe(true);
+});
+
+test('anita lava la tina es palíndromo', () => {
+  expect(isPalindrome('anita lava la tina')).toBe(true);
+});
+
+test('python no es palíndromo', () => {
+  expect(isPalindrome('python')).toBe(false);
+});
+
+test('cadena vacía es palíndromo', () => {
+  expect(isPalindrome('')).toBe(true);
 });
